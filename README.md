@@ -2,18 +2,18 @@
 
 Code and data for the KTND (Koopman-Thermodynamic Neural Decomposition) framework. This method learns the spectral structure of non-equilibrium dynamics directly from time-series data, without access to equations of motion.
 
-**Paper:** *Spectral Decomposition of Entropy Production from Non-Self-Adjoint Koopman Operators* — submitted to Physical Review E.
+**Paper:** *Spectral Decomposition of Entropy Production from Non-Self-Adjoint Koopman Operators* - submitted to Physical Review E.
 
 ## What this does
 
 A dual-lobe variational neural network learns the left and right eigenfunctions of a non-self-adjoint Koopman operator from raw time series. Complex eigenvalues encode rotational probability currents (broken detailed balance), and the antisymmetric part of the learned operator yields entropy production estimates without requiring a force field, diffusion matrix, or Fokker-Planck equation.
 
 Key outputs:
-- **Complex Koopman eigenvalues** — oscillation frequencies and decay rates of dynamical modes
-- **Per-mode entropy production** — spectral decomposition of irreversibility (only complex modes contribute)
-- **Irreversibility field I(x)** — pointwise map of where detailed balance breaks in state space
-- **Frobenius entropy production** — non-perturbative estimator from the antisymmetric Koopman component
-- **Spectral gap** — predicts regime transitions out of sample
+- **Complex Koopman eigenvalues** - oscillation frequencies and decay rates of dynamical modes
+- **Per-mode entropy production** - spectral decomposition of irreversibility (only complex modes contribute)
+- **Irreversibility field I(x)** - pointwise map of where detailed balance breaks in state space
+- **Frobenius entropy production** - non-perturbative estimator from the antisymmetric Koopman component
+- **Spectral gap** - predicts regime transitions out of sample
 
 ## Repository structure
 
@@ -86,8 +86,8 @@ pytest tests/ -v
 | Frobenius EP | 0.10 nats/day | 0.40 nats/day |
 | k-NN EP | 0.26 nats/day | 0.31 nats/day |
 | IAAFT Cohen's d | 31.0 | 7.1 |
-| Crisis AUROC | 0.78 | — |
-| Gyrator calibration | r = 0.94 | — |
+| Crisis AUROC | 0.78 | - |
+| Gyrator calibration | r = 0.94 | - |
 
 ## Configuration
 
