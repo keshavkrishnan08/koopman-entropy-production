@@ -2,10 +2,10 @@
 """
 Targeted experiments to address PRE reviewer risk factors.
 
-1. Non-perturbative Frobenius EP — no expansion needed
-2. Gyrator Frobenius validation — analytical benchmark
-3. Multiasset bootstrap at 5 modes — proper UQ
-4. Drawdown-based prediction — larger N than NBER
+1. Non-perturbative Frobenius EP: no expansion needed
+2. Gyrator Frobenius validation: analytical benchmark
+3. Multiasset bootstrap at 5 modes: proper UQ
+4. Drawdown-based prediction: larger N than NBER
 """
 import json
 import logging

@@ -232,7 +232,7 @@ def experiment_univariate_frobenius():
     X_pairs = embedded[:-tau]
     Y_pairs = embedded[tau:]
 
-    # Load model — univariate uses [64,64,32], not the multiasset default
+    # Load model: univariate uses [64,64,32], not the multiasset default
     hidden_dims = [64, 64, 32]
     model = NonEquilibriumVAMPNet(
         input_dim=input_dim,

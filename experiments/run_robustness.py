@@ -479,7 +479,7 @@ def permutation_test_irreversibility(
     null_db_raw = null_db_raw[valid_mask]  # keep in sync
 
     if n_valid == 0:
-        # All IAAFT surrogates failed — fall back to PCA-projected test
+        # All IAAFT surrogates failed: fall back to PCA-projected test
         # for high-dimensional data where IAAFT is unreliable
         fallback_result = {
             "test": "Permutation_Irreversibility",
@@ -608,7 +608,7 @@ def permutation_test_irreversibility(
         p_fisher = float("nan")
 
     # Use the irreversibility p-value as primary (scientifically motivated).
-    # DB violation is supplementary — surrogates can have HIGHER DB violation
+    # DB violation is supplementary: surrogates can have HIGHER DB violation
     # because randomized temporal structure creates more asymmetric K matrices.
     p_value = p_irrev
     logger.info(

@@ -180,7 +180,7 @@ def train_fold(
         epsilon=cv_epsilon,
     ).to(device)
 
-    # Training loop (abbreviated — fewer epochs for CV efficiency)
+    # Training loop (abbreviated: fewer epochs for CV efficiency)
     n_epochs = min(train_cfg.get("n_epochs", 800), 400)  # cap at 400 for CV
     patience = min(train_cfg.get("patience", 80), 50)
     lr = train_cfg.get("learning_rate", 3e-4)

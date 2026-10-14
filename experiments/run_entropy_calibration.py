@@ -9,7 +9,7 @@ quantifies the expected gap between the two estimators and validates
 that both scale correctly with the true EP.
 
 This addresses the PRE reviewer concern about the 66x gap between
-empirical and spectral entropy estimates on financial data — by showing
+empirical and spectral entropy estimates on financial data, by showing
 the gap is a fundamental property of the estimators, not a model failure.
 
 Usage

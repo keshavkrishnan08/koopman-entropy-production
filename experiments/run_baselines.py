@@ -310,7 +310,7 @@ def run_garch_baseline(
     logger.info("Fitting GARCH(1,1) baseline ...")
     t0 = time.time()
 
-    # GARCH requires univariate input — use first column if multivariate
+    # GARCH requires univariate input: use first column if multivariate
     train_r = train_returns.ravel() if train_returns.ndim == 1 else train_returns[:, 0]
     test_r = test_returns.ravel() if test_returns.ndim == 1 else test_returns[:, 0]
     full_r = full_returns.ravel() if full_returns.ndim == 1 else full_returns[:, 0]

@@ -218,7 +218,7 @@ def rolling_spectral_analysis(
             order = np.argsort(-magnitudes)
             sorted_mag = magnitudes[order]
 
-            # Spectral gap — continuous-time: |Re(ln λ₂)|/τ
+            # Spectral gap: continuous-time: |Re(ln λ₂)|/τ
             spectral_gap = float(
                 KoopmanAnalyzer.compute_spectral_gap(out["eigenvalues"], tau=float(tau))
             )
