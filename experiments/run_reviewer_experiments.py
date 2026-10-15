@@ -419,7 +419,7 @@ def experiment_window_sensitivity(project_root: Path) -> Dict[str, Any]:
             print(f"  W={W:4d}:  AUROC = {auroc:.3f}  n_windows={len(rdf)}  ({elapsed:.1f}s)")
         except Exception as e:
             results[W] = {"error": str(e)}
-            print(f"  W={W:4d}:  FAILED — {e}")
+            print(f"  W={W:4d}:  FAILED, {e}")
 
     # Check stability: max AUROC spread < 0.1
     aurocs = [v["auroc"] for v in results.values()

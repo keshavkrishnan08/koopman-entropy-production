@@ -198,7 +198,7 @@ def time_delay_embedding(
     # Row indices: (n_rows, 1) + (1, embedding_dim) -> (n_rows, embedding_dim)
     row_idx = np.arange(n_rows)[:, np.newaxis] + col_offsets[np.newaxis, :]
 
-    # Advanced indexing – one gather per feature column, then hstack
+    # Advanced indexing: one gather per feature column, then hstack
     embedded = np.empty((n_rows, D * embedding_dim), dtype=np.float64)
     for d in range(D):
         embedded[:, d * embedding_dim:(d + 1) * embedding_dim] = x[row_idx, d]

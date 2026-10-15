@@ -368,7 +368,7 @@ Complete implementation of the KTND-Finance framework: Non-Equilibrium Koopman-T
 - `default.yaml`: n_modes=10, hidden_dims=[128,128,64], τ=5, embedding_dim=5, batch_size=512, lr=1e-3, 500 epochs, patience=50.
 - `univariate.yaml`: SPY-only (input_dim=1).
 - `multiasset.yaml`: 11 sector ETFs (input_dim=11).
-- `config/ablation/`: 13 ablation configs (A1–A13): no_entropy, no_orthogonality, linear_features, shared_weights, n_modes_sweep, lag_sweep, window_sweep, architecture_sweep, no_embedding, embedding_sweep, dropout_sweep, standardization, no_spectral_penalty. Consistent `sweep.parameter`/`sweep.values` format.
+- `config/ablation/`: 13 ablation configs (A1-A13): no_entropy, no_orthogonality, linear_features, shared_weights, n_modes_sweep, lag_sweep, window_sweep, architecture_sweep, no_embedding, embedding_sweep, dropout_sweep, standardization, no_spectral_penalty. Consistent `sweep.parameter`/`sweep.values` format.
 
 ### Experiment Runners (`experiments/`)
 - `run_main.py`: Full pipeline: download → preprocess → FNN → embed → train (VAMP-2 + losses) → extract spectrum → entropy decomposition → irreversibility → save.
