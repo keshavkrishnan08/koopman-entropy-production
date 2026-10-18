@@ -15,9 +15,6 @@ system would give real eigenvalues. Complex ones mean the dynamics rotate throug
 a preferred direction, and the size of that rotation is a measurable departure from equilibrium,
 broken down mode by mode.
 
-Manuscript draft: **`paper/main.tex`** (written for Physical Review E; some of its numbers come
-from earlier runs than the result files, see Honesty).
-
 ```
 daily log returns: SPY (1993 to 2026) or 11 cross-asset ETFs (2007 to 2026)
     ->  delay embedding (5 lags for SPY, 2 per ETF), z-scored on training-period statistics
